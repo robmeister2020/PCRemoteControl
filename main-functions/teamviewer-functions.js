@@ -20,7 +20,7 @@ class TeamViewerFunctions {
 	
 	openTeamViewer(callback) {
 		ps = getNewShell();
-		ps.addCommand(`C:/Users/thepo/Applications/RobsRemoteInfo/powershell-scripts/open_teamviewer.ps1`);
+		ps.addCommand(`..\\powershell-scripts\\open_teamviewer.ps1`);
 		ps.invoke()
 			.then(response => {
 				console.log(new Date() + ' TeamViewer successfully opened');

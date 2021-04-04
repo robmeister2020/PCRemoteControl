@@ -8,7 +8,7 @@ class ScreenshotFunctions {
 		var randomNumber = Math.floor(Math.random() * (1000000 - 1 + 1)) + 1;
 		
 		ps = getNewShell();
-		ps.addCommand(`./take_screenshot.ps1 "` + randomNumber + `" "` + imageDirectory + `"` );
+		ps.addCommand(`..\\powershell-scripts\\take_screenshot.ps1 "` + randomNumber + `" "` + imageDirectory + `"` );
 		ps.invoke()
 			.then(response => {
 				console.log(new Date() + ': screenshot taken');
