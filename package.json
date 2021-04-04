@@ -1,0 +1,46 @@
+{
+  "name": "robsremoteinfo",
+  "version": "1.0.0",
+  "description": "Node App to relate system info",
+  "main": "robs-remote-info.js",
+  "scripts": {
+    "dev": "nodemon robs-remote-info.js",
+    "start": "node robs-remote-info.js",
+    "test": "test-remote-info"
+  },
+  "keywords": [
+    "robs",
+    "remote",
+    "info",
+    "powershell"
+  ],
+  "author": "Robin Allen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.0",
+    "multer": "^1.4.2",
+    "multer-sftp": "^1.1.1",
+    "mysql": "^2.18.1",
+    "node-powershell": "^4.0.0",
+    "node-sshclient": "^0.2.0",
+    "nodemon": "^2.0.7",
+    "powertoast": "^1.2.3",
+    "queue": "^6.0.2",
+    "scp": "^0.0.3",
+    "scp2": "^0.5.0",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0",
+    "sql": "^0.78.0",
+    "ssh2-sftp-client": "^6.0.1",
+    "wait-on": "^5.2.1",
+    "winston": "^3.3.3",
+    "winston-winlog": "^0.2.1",
+    "winston-winlog2": "^1.0.2",
+    "winston-winlog3": "^1.1.2",
+    "wintools": "^0.1.0"
+  }
+}
