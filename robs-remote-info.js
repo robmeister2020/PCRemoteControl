@@ -22,10 +22,10 @@ function runPeriodicTasks() {
 	getSystemInformation.getUpdatedWanIp(systemInformationUpdated);
 }
 
-function systemInformationUpdated(latestWanIpAddress) {
+function systemInformationUpdated(latestWanIpAddress, latestMachineIpAddress) {
 	wanIpAddress = latestWanIpAddress;
-	if(wanIpAddress.length > 0) {
-		writeSystemInfo.refreshDbInfo(wanIpAddress);
+	if(wanIpAddress.length > 0 && latestMachineIpAddress.length > 0) {
+		writeSystemInfo.refreshDbInfo(wanIpAddress, latestMachineIpAddress);
 	}
 	console.log(new Date() + ': periodic tasks complete. Sleeping');
 }

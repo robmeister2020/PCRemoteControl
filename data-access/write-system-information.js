@@ -2,10 +2,11 @@ const axios = require('axios');
 
 class WriteSystemInformation {
 	
-	refreshDbInfo(wanIpAddress) {
+	refreshDbInfo(wanIpAddress, machineIpAddress) {
 		axios
 		  .post('https://lebtours.com/robs-home-info/robs-home-info.php', {
 			wanIpAddress: wanIpAddress,
+			machineIpAddress: machineIpAddress,
 			isWakePc: 0
 		  })
 		  .then(res => {
